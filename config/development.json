@@ -1,0 +1,41 @@
+{
+  "port": 2045,
+  "hostAddress": "localhost:2029",
+  "databasePort": "27017",
+  "databaseName": "planetspark",
+  "databaseHostLocal": "127.0.0.1",
+  "databaseHost": "planetspark",
+  "dbUserName": "planetspark",
+  "dbPass": "planetspark",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "nodemailer": {
+    "service": "gmail",
+    "email": "************",
+    "password": "***********"  
+  },
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "planetspark-node",
+      "version": "2.0",
+      "description": "planetspark-API Docs"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+ 
+  "cloudinary": {
+    "cloud_name": "*******",
+    "api_key": "*********",
+    "api_secret": "**********"
+  }
+}
